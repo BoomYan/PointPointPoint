@@ -46,7 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BabyScript.cs" />
+     <Compile Include="Assets\Scripts\BarScript.cs" />
      <Compile Include="Assets\Scripts\CubeScript.cs" />
+     <Compile Include="Assets\Scripts\Sphere2Script.cs" />
+     <Compile Include="Assets\Scripts\SphereCollisionScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
