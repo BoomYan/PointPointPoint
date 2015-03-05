@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BabyScript : MonoBehaviour {
 	
 	float blood = 100f;
 	float wall	= 1.2f;
 	float metaBlood = 10f;
+	public Text b;
 	// Use this for initialization
 	void Start () {
 	
@@ -26,8 +28,11 @@ public class BabyScript : MonoBehaviour {
 
 	void OnCollisionStay2D (Collision2D col)
 	{
-		blood -= metaBlood * Time.deltaTime;
-		Debug.Log (blood);
-		
+		if (blood > 0) {
+			blood -= metaBlood * Time.deltaTime;
+			b.text="Blood: "+blood;
+			Debug.Log (blood);
+		} else
+			Application.LoadLevel(Application.loadedLevel);
 	}
 }

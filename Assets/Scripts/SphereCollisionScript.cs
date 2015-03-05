@@ -19,8 +19,9 @@ public class SphereCollisionScript : MonoBehaviour {
 //			{
 //				Destroy(col.gameObject);
 //			}
-			Debug.Log ("GAME OVER!!");
-			Application.Quit();
+//			Application.LoadLevel(Application.loadedLevel);
+//			Debug.Log ("GAME OVER!!");
+//			Application.Quit();
 
 		}
 }
